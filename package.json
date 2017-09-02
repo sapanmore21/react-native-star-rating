@@ -29,7 +29,7 @@
   "dependencies": {
     "prop-types": "^15.5.10",
     "react-addons-update": "^15.6.0",
-    "react-native-button": "^2.1.0",
+    "react-native-button": "waterdoo/react-native-button",
     "react-native-vector-icons": "^4.2.0"
   },
   "repository": {
