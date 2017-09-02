@@ -4,7 +4,7 @@ import React, {
 } from 'react';
 import {
   View,
-  ViewPropTypes,
+//   ViewPropTypes, //disable for RN 0.39.2
 } from 'react-native';
 import PropTypes from 'prop-types';
 
@@ -120,8 +120,8 @@ StarRating.propTypes = {
   starColor: PropTypes.string,
   emptyStarColor: PropTypes.string,
   starSize: PropTypes.number,
-  starStyle: ViewPropTypes.style,
-  buttonStyle: ViewPropTypes.style,
+  starStyle: View.propTypes.style, //replace ViewPropTypes for RN 0.39.2
+  buttonStyle: View.propTypes.style, //replace ViewPropTypes for RN 0.39.2
   halfStarEnabled: PropTypes.bool,
   reversed: PropTypes.bool,
 };
