@@ -4,7 +4,7 @@ import React, {
 } from 'react';
 import {
   View,
-  // ViewPropTypes, //use View.propTypes for RN 0.39.2
+  ViewPropTypes,
   Image,
 } from 'react-native';
 import PropTypes from 'prop-types';
@@ -148,8 +148,8 @@ StarButton.propTypes = {
     PropTypes.number,
   ]).isRequired,
   starColor: PropTypes.string.isRequired,
-  starStyle: View.propTypes.style, //use View.propTypes over ViewPropTypes for RN 0.39.2
-  buttonStyle: View.propTypes.style, //use View.propTypes over ViewPropTypes for RN 0.39.2
+  starStyle: ViewPropTypes.style,
+  buttonStyle: ViewPropTypes.style,
   halfStarEnabled: PropTypes.bool.isRequired,
   reversed: PropTypes.bool.isRequired,
 };
